@@ -1,0 +1,59 @@
+.header {
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+    margin-bottom: 40px;
+    height: 100px;
+}
+
+.title {
+    align-items: end;
+    margin-top: -10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+    transform: translateX(-50%);
+    margin-left: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button.selected {
+    background-color: #c5b8d5;
+    color: white;
+    border-bottom: solid #5a2d8e;
+}
+
+.table-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fafafa;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.chart-container .ag-chart {
+    width: 100%;
+    height: 300px;
+}
